@@ -1,7 +1,7 @@
 [package]
-name = "auto-words-complete-api"
+name = "autofill-letter-api"
 version = "0.1.0"
-edition = "2023"
+edition = "2021"
 
 [dependencies]
 parking_lot = "0.12.0"
