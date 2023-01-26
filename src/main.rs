@@ -41,8 +41,6 @@ async fn get_suggestions(query: Query) -> Result<impl warp::Reply, warp::Rejecti
 }
 
 fn post_json() -> impl Filter<Extract = (Query,), Error = warp::Rejection> + Clone {
-    // When accepting a body, we want a JSON body
-    // (and to reject huge payloads)...
     warp::body::content_length_limit(1024 * 16).and(warp::body::json())
 }
 
@@ -73,5 +71,5 @@ async fn main() {
 
     let routes = suggestions_endpoint;
 
-    warp::serve(routes).run(([0, 0, 0, 0], 3030)).await;
+    warp::serve(routes).run(([0, 0, 0, 0], 8080)).await;
 }
