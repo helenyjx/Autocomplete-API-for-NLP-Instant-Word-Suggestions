@@ -7,7 +7,7 @@ This mini demo is aimed at teaching you to build an API for autofilling letters 
 
 ## Run it in Docker
 1. Type: `docker build -f Dockerfile . -t rust-autocomplete:latest `
-2. See API: `docker run -d -p 0.0.0.0:3030:3030  --name rust-autocomplete-api rust-autocomplete`
+2. See API: `docker run -d -p 0.0.0.0:8080:8080  --name rust-autocomplete-api rust-autocomplete`
 
 ## Show some Curl examples: 
 Curl, short for "Client for URLs", is a command line tool for transferring data using various protocols.
